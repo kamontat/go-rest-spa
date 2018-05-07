@@ -3,6 +3,3 @@ bin
 
 pkg
 !pkg/.gitkeep
-
-!src/github.com/kamontat
-src
