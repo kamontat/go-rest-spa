@@ -1,0 +1,8 @@
+bin
+!bin/.gitkeep
+
+pkg
+!pkg/.gitkeep
+
+!src/github.com/kamontat
+src
