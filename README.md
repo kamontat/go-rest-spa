@@ -2,13 +2,14 @@
 
 ## pre condition
 
-1. create google cloud 
-2. create kubernete clutters `gcloud container clusters create restapi --num-nodes=3`
+1. create account google cloud 
+2. create project google cloud 
+3. create kubernete clutters `gcloud container clusters create restapi --num-nodes=3`
 
 ## Run
 
 1. change docker location 
-2. export PROJECT_ID="$(gcloud config get-value project -q)"
+2. `export PROJECT_ID="$(gcloud config get-value project -q)"`
 3. run `docker build -t gcr.io/$PROJECT_ID/restapi .`
 4. run `gcloud docker -- push gcr.io/$PROJECT_ID/restapi`
 5. create runner `kubectl create -f kubectl.yaml`
